@@ -95,6 +95,7 @@ margin: 0.5cm;
 
   body {
 font: 9pt Georgia, "Times New Roman", Times, serif;
+
 line-height: 1.3;
 }
 
@@ -119,7 +120,7 @@ margin: 0;
 
 header:before {
 display: block;
-content: "(See dynamic CV on http://www.arnaud.me)";
+content: "(See dynamic CV on http://arnaud.ml)";
 margin-bottom: 10px;
 border: 1px solid #bbb;
 padding: 3px 5px;
