@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Broccoli</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://arnaudmiribel.github.io/broccoli-turk/utils/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://arnaudmiribel.github.io/broccoli-turk/utils/scrolling-nav.css" rel="stylesheet">
+
+    <style>
+    #submitButton {
+      cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+      padding:5px 25px; /*add some padding to the inside of the button*/
+      background:#FF9933; /*the colour of the button*/
+      border:1px solid #FF9900; /*required or the default border for the browser will appear*/
+      /*give the button curved corners, alter the size as required*/
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      /*give the button a drop shadow*/
+      -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+      -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+      box-shadow: 0 0 4px rgba(0,0,0, .75);
+      /*style the text*/
+      color:#f3f3f3;
+      font-size:1.1em;
+    }
+    </style>
+
+    <script> $('input').css('width',((input.getAttribute('placeholder').length + 1) * 18) + 'px'); </script>
+    <script language="javascript">
+      function WriteToFile()
+      {
+      var fso = new ActiveXObject("Scripting.FileSystemObject");
+      var s = fso.CreateTextFile("./form.txt", true);
+      var text=document.getElementById("input").innerText;
+      s.WriteLine(text);
+      s.WriteLine('***********************');
+      s.Close();
+      }
+
+      function submit()
+      {
+        document.getElementById("answer").innerHTML = "<br> Blablabla";
+      }
+    </script>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <div class="navbar-brand js-scroll-trigger"><u>Rules</u><br>
+        &#9702; Fill all the blanks in the sentences.<br>
+        &#9702; If you don't know, please type a star *<br>
+        &#9702; Finally press Submit when you're done.<br>
+      </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <img src="https://arnaudmiribel.github.io/broccoli-turk/utils/logo.png" style="border-radius:50px;"></img>
+              <a class="nav-link js-scroll-trigger" href="#">Broccoli Project</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <section id="about">
+      <div class="container">
+        <div class="row" style="margin-top: 150px;">
+          <div class="col-lg-8 mx-auto">
+              <form>
+              <br> The Tragedy of Romeo and Juliet is a  <input placeholder='###' id='input_0' class='form' required pattern=tragedy> </input></span> by William Shakespeare concerning the fate of two young " star-cross'd lovers". It is one of the most famous of Shakespeare's plays, one of his earliest theatrical triumphs, and is thought to be the most  archetypal love story of the Renaissance and indeed the history of Western <input placeholder='###' id='input_1' class='form' required pattern=culture> </input></span>. </br> <br> <br>
+          <input type="submit" id="submitButton" />
+        </form>
+        <p id="answer"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Broccoli</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://arnaudmiribel.github.io/broccoli-turk/utils/jquery.min.js"></script>
+    <script src="https://arnaudmiribel.github.io/broccoli-turk/utils/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://arnaudmiribel.github.io/broccoli-turk/utils/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="https://arnaudmiribel.github.io/broccoli-turk/utils/ scrolling-nav.js"></script>
+
+  </body>
+
+</html>
