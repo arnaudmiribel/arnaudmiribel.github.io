@@ -37,7 +37,7 @@ jobs:
 
       # Copy into github pages folder
       - name: Copy
-        run: cp loconotion/dist/content/* content
+        run: cp loconotion/dist/arnaud-miribel/* content
 
       # Auto commit the website
       - uses: stefanzweifel/git-auto-commit-action@v4
