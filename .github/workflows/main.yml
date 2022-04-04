@@ -35,9 +35,13 @@ jobs:
       - name: Run
         run: cd loconotion && python3 loconotion --clean ../site.toml
 
+      # Make directory
+      - name: Make directory if not exists
+        run: mkdir -p content
+
       # Copy into github pages folder
       - name: Copy
-        run: cp loconotion/dist/arnaud-miribel/* content
+        run: cp loconotion/dist/content/* content
 
       # Auto commit the website
       - uses: stefanzweifel/git-auto-commit-action@v4
