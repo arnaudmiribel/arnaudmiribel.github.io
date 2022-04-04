@@ -2,8 +2,9 @@
 # full .toml configuration example file to showcase all of Loconotion's available settings
 # check out https://github.com/toml-lang/toml for more info on the toml format
 
-# name of the folder that the site will be generated in
-name = "content"
+# name of the folder that the site will be generated in.
+# By default, use 'docs' because this is recognized by GitHub
+name = "docs"
 
 # the notion.so page to being parsing from. This page will become the index.html
 # of the generated site, and loconotation will parse all sub-pages present on the page

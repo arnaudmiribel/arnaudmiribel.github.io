@@ -25,7 +25,7 @@ jobs:
 
       # Clean the output
       - name: Clean
-        run: rm -f content/*
+        run: rm -f docs/*
 
       # Install dependencies
       - name: Install
@@ -37,15 +37,15 @@ jobs:
 
       # Make directory
       - name: Make directory if not exists
-        run: mkdir -p content
+        run: mkdir -p docs
 
       # Copy into github pages folder
       - name: Copy
-        run: cp loconotion/dist/content/* content
+        run: cp loconotion/dist/docs/* docs
 
       # Auto commit the website
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: content/*
+          file_pattern: docs/*
 
 
